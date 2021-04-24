@@ -5,7 +5,7 @@
 - Latest 30-minute moving average trade price, before the quote.
 - The bid/ask price movement from previous day’s closing price.
 
-### Design steps
+### Design
 - spark will read the parquet files based on trade date for current date from the HDFS folder
 - After calculating the average moving price for last 30 minutes the result will be written to a temp hive table
 - similarly the average moving price for last 30 minutes for last day is calculated and written to a temp hive table
